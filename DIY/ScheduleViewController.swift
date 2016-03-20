@@ -13,7 +13,8 @@ class ScheduleViewController: UICollectionViewController {
   let sessions = Session.allSessions()
   
   override func preferredStatusBarStyle() -> UIStatusBarStyle {
-    return UIStatusBarStyle.LightContent
+    //return UIStatusBarStyle.LightContent
+  return UIStatusBarStyle.Default
   }
   
   override func viewDidLoad() {
@@ -24,7 +25,8 @@ class ScheduleViewController: UICollectionViewController {
     layout.headerReferenceSize = CGSize(width:width, height: 180)
     layout.itemSize = CGSize(width: width, height: 62)
     
-
+    collectionView!.contentInset =
+        UIEdgeInsets(top: 20, left: 0, bottom: 0, right: 0)
   }
   
 }
