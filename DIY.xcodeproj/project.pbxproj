@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		740FFBC51C9EB4B600A011BC /* DIYLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740FFBC41C9EB4B600A011BC /* DIYLayout.swift */; };
 		7B46CF3A1AAF4B27006A5089 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B46CF391AAF4B27006A5089 /* AppDelegate.swift */; };
 		7B46CF3F1AAF4B27006A5089 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B46CF3D1AAF4B27006A5089 /* Main.storyboard */; };
 		7B46CF441AAF4B27006A5089 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B46CF421AAF4B27006A5089 /* LaunchScreen.xib */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		740FFBC41C9EB4B600A011BC /* DIYLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIYLayout.swift; sourceTree = "<group>"; };
 		7B46CF341AAF4B27006A5089 /* DIY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DIY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B46CF381AAF4B27006A5089 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B46CF391AAF4B27006A5089 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 		7B46CF5C1AAF4BBA006A5089 /* Layouts */ = {
 			isa = PBXGroup;
 			children = (
+				740FFBC41C9EB4B600A011BC /* DIYLayout.swift */,
 			);
 			name = Layouts;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			files = (
 				7B46CF621AAF4E27006A5089 /* ScheduleCell.swift in Sources */,
 				7B46CF3A1AAF4B27006A5089 /* AppDelegate.swift in Sources */,
+				740FFBC51C9EB4B600A011BC /* DIYLayout.swift in Sources */,
 				7B46CF701AAF5160006A5089 /* ScheduleHeaderView.swift in Sources */,
 				7B46CF6B1AAF4F07006A5089 /* Session.swift in Sources */,
 				7B46CF6E1AAF5001006A5089 /* ScheduleViewController.swift in Sources */,
