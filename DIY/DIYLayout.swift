@@ -12,6 +12,7 @@ import UIKit
 class DIYLayoutAttributes: UICollectionViewLayoutAttributes {
     
     var deltaY: CGFloat = 0
+
     
     override func copyWithZone(zone: NSZone) -> AnyObject {
         let copy = super.copyWithZone(zone) as! DIYLayoutAttributes
@@ -31,6 +32,8 @@ class DIYLayoutAttributes: UICollectionViewLayoutAttributes {
 
 class DIYLayout : UICollectionViewFlowLayout {
     
+    var maximumStretchHeight: CGFloat = 0
+    
     override class func layoutAttributesClass() -> AnyClass {
         return DIYLayoutAttributes.self
     }
@@ -47,7 +50,7 @@ class DIYLayout : UICollectionViewFlowLayout {
                 if let elementKind = attributes.representedElementKind{
                     if elementKind == UICollectionElementKindSectionHeader{
                         var frame = attributes.frame
-                        frame.size.height = max(minY, headerReferenceSize.height + deltaY)
+                        frame.size.height = min(max(minY, headerReferenceSize.height + deltaY),maximumStretchHeight)
                         frame.origin.y = CGRectGetMinY(frame) - deltaY
                         attributes.frame = frame
                         attributes.deltaY = deltaY
